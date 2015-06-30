@@ -83,7 +83,7 @@ $(document).ready(function(){
 				$('#about-content-container').fadeOut(500);
 				setTimeout(function(){ $('#about').animate({width: 0}, 500) }, 500);
 				setTimeout(function(){ $('#work').animate({top: 0}, 500) }, 500);
-				setTimeout(function(){ $('#about').animate({top: '650px'}, 500) }, 1000);
+				setTimeout(function(){ $('#about').animate({top: '800px'}, 500) }, 1000);
 				setTimeout(function(){ $('#work').animate({width: '100%', left: 0}, 1000) }, 1000);
 				setTimeout(function(){ $('#work-content-container').fadeIn(500); }, 2000);
 				menuClose();
@@ -97,8 +97,8 @@ $(document).ready(function(){
 				$('#home').animate({right: 0}, 100);
 				setTimeout(function(){ $('#about').animate({width: 0}, 500) }, 500);
 				setTimeout(function(){ $('#work').animate({width: 0}, 500) }, 500);
-				setTimeout(function(){ $('#about').animate({top: '650px'}, 500) }, 1000);
-				setTimeout(function(){ $('#work').animate({top: '650px'}, 500) }, 1000);
+				setTimeout(function(){ $('#about').animate({top: '800px'}, 500) }, 1000);
+				setTimeout(function(){ $('#work').animate({top: '800px'}, 500) }, 1000);
 				setTimeout(function(){$('#head-container').fadeIn(500)}, 1000)
 				menuClose();
 				counter += 1
@@ -110,7 +110,7 @@ $(document).ready(function(){
 				 $('#work-content-container').fadeOut(500);
 				setTimeout(function(){ $('#work').animate({width: 0}, 500) }, 500);
 				setTimeout(function(){ $('#about').animate({top: 0}, 500) }, 500);
-				setTimeout(function(){ $('#work').animate({top: '650px'}, 500) }, 1000);
+				setTimeout(function(){ $('#work').animate({top: '800px'}, 500) }, 1000);
 				setTimeout(function(){ $('#about').animate({width: '100%', left: 0}, 1000) }, 1000);
 				setTimeout(function(){$('#about-content-container').fadeIn(500)}, 2000)
 				menuClose();
