@@ -15,10 +15,17 @@
 		<span id="bottom-icon"></span>
 	</div>
 	<nav>
-		<div id="nav-link-container">
-			<a href=""><h4>Home</h4></a>
-			<a href=""><h4>Portfolio</h4></a>
-			<a href=""><h4>About</h4></a>
+		<div class="menu-text-container">
+			<span></span>
+			<h4 class="nav-text" id="home-link">Home</h4>
+		</div>
+		<div class="menu-text-container">
+			<span></span>
+			<h4 class="nav-text" id="work-link">Work</h4>
+		</div>
+		<div class="menu-text-container">
+			<span></span>
+			<h4 class="nav-text" id="about-link">About</h4>
 		</div>
 	</nav>
 	<header id="home">
@@ -30,7 +37,7 @@
 				<path fill="none" stroke="#D5E2EE" stroke-width="5" stroke-miterlimit="10" d="M377.4,195.9c0,5.8-0.3,11.5-0.8,17.2c-3.9,41.2-21.9,78.3-49.1,106.4H71c-27.2-28.2-45.1-65.2-49.1-106.4c-0.5-5.7-0.8-11.4-0.8-17.2c0-24,4.8-47,13.4-67.9c18.7-45.3,55.6-81.3,101.6-98.7v29.9c8.5-4.1,17.5-7.4,26.9-9.8V21.5c5-1,10.2-1.9,15.4-2.5c6.9-0.8,13.9-1.2,20.9-1.2s14.1,0.4,20.9,1.2c5.2,0.6,10.4,1.4,15.5,2.5v27.9c9.3,2.4,18.3,5.7,26.9,9.8V29.3c46,17.5,82.9,53.5,101.6,98.9C372.6,149.1,377.4,171.9,377.4,195.9z"/>
 				<path fill="none" stroke="#D5E2EE" stroke-width="5" stroke-miterlimit="10" d="M345.4,191c0,39.4-15.6,75.1-40.9,101.4H94c-25.3-26.3-40.9-62-40.9-101.4c0-58.1,33.9-108.3,83-131.8c8.5-4.1,17.5-7.4,26.9-9.8c11.6-3,23.8-4.5,36.3-4.5c12.6,0,24.8,1.6,36.4,4.6c9.3,2.4,18.3,5.7,26.9,9.8C311.5,82.8,345.4,132.9,345.4,191z"/>
 				<path id="helmet-window" fill="none" stroke="#D5E2EE" stroke-width="5" stroke-miterlimit="10" d="M341.4,190.4c0,38.3-15.2,73.1-39.8,98.7H96.9c-24.7-25.6-39.8-60.3-39.8-98.7c0-56.5,33-105.3,80.7-128.2c8.3-4,17-7.2,26.1-9.5c11.3-2.9,23.1-4.4,35.3-4.4c12.2,0,24.1,1.5,35.4,4.4c9.1,2.3,17.8,5.5,26.1,9.5C308.5,85.1,341.4,133.9,341.4,190.4z"/>
-				<path id="reflection" fill="#5F92B3" d="M302.8,264.6c8.8-18.2,13.8-38.6,13.8-60.2c0-54.9-32-102.4-78.4-124.7c-8.1-3.9-16.6-7-25.4-9.3c-11-2.8-22.5-4.3-34.4-4.3c-9.8,0-19.4,1-28.7,3c5.6-2.3,11.3-4.2,17.2-5.7c10.2-2.6,21-4,32-4c11.1,0,21.8,1.4,32.1,4c8.2,2.1,16.2,5,23.7,8.6c43.3,20.8,73.1,65,73.1,116.3C327.8,216.8,318.5,243.2,302.8,264.6z"/>
+				<path id="reflection" fill="none" d="M302.8,264.6c8.8-18.2,13.8-38.6,13.8-60.2c0-54.9-32-102.4-78.4-124.7c-8.1-3.9-16.6-7-25.4-9.3c-11-2.8-22.5-4.3-34.4-4.3c-9.8,0-19.4,1-28.7,3c5.6-2.3,11.3-4.2,17.2-5.7c10.2-2.6,21-4,32-4c11.1,0,21.8,1.4,32.1,4c8.2,2.1,16.2,5,23.7,8.6c43.3,20.8,73.1,65,73.1,116.3C327.8,216.8,318.5,243.2,302.8,264.6z"/>
 				<path fill="none" stroke="#D5E2EE" stroke-width="5" stroke-miterlimit="10" d="M220.2,9.9V19c-6.9-0.8-13.9-1.2-20.9-1.2s-14.1,0.4-20.9,1.2V9.9c0-3.5,2.8-6.3,6.3-6.3h29.2C217.3,3.5,220.2,6.4,220.2,9.9z"/>
 				<path fill="none" stroke="#D5E2EE" stroke-width="5" stroke-miterlimit="10" d="M186.1,16.9v-5.4c0-2.1,1.7-3.7,3.7-3.7h17.3c2.1,0,3.7,1.7,3.7,3.7v5.4"/>
 				<path fill="none" stroke="#D5E2EE" stroke-width="5" stroke-miterlimit="10" d="M163,21.5v27.9c-9.3,2.4-18.3,5.7-26.9,9.8V29.3C144.7,26,153.7,23.4,163,21.5z"/>
@@ -78,9 +85,224 @@
 				</div>
 			</div> <!-- END OF SOCIAL ICON CONTAINER -->
 		</div> <!-- END OF HOME CONTAINER -->
-
-
 	</header>
+
+	<section id="work"> <!-- WORK SECTION BEGIN -->
+		<div id="work-content-container">
+			<h2>Work</h2>
+			<div id="work-icon-container">
+				<a href="https://twitter.com/JLass6688" target="_blank" class="icon-img" ><img src="imgs/twitter.png"></a>
+				<a href="https://github.com/JLass6688" target="_blank" class="icon-img" ><img src="imgs/github.png"></a>
+				<a href="https://www.linkedin.com/in/jakelassiter" target="_blank" class="icon-img"><img src="imgs/linkedin.png"></a>
+				<a href="https://dribbble.com/JLass6688" target="_blank" class="icon-img"><img src="imgs/dribbble.png" class="damn-img"></a>
+			</div>
+			<div id="work-pieces-container">
+				<div class="work-piece-container" >
+					<img src="imgs/apollo.png">
+				</div>
+				<div class="work-piece-expanded">
+					<div class="work-expanded-container">
+						<img src="imgs/apollo.png">
+						<div class="work-expanded-info">
+							<div class="close-icon">
+								<span id="top-icon"></span>
+								<span id="bottom-icon"></span>
+							</div>
+							<h1>Apollo</h1>
+							<h3>About</h3>
+							<p>Apollo Music Application is a one-stop-shop for tour schedule, twitter feed, and latest news articles on any music artist. Simply search for any music artist by name and Apollo will pull the results into a user friendly interface.</p>
+							<h3>Features</h3>
+							<ul>
+								<li>Search Feature- quick and easy searching for any music artist. One search will pull in all of the below information, eliminating the need for multiple searches.</li>
+								<li>Twitter Feeds- allows the user to see the up-to-date Twitter feed of their favorite artists.</li>
+								<li>Touring Information- allows users to browse the latest touring information, as well as links to purchase tickets.</li>
+							</ul>
+							<h3>My Role</h3>
+							<p>Apollo was a passion project of mine. I realized the need for a centralized source of informaiton relating to music artists. Taking ownership of Apollo, I was responsible for developing the entire application start to finish. Apollo is a Ruby on Rails application, utilizing Backbone.js and Underscore.js for the Front-End.</p>
+						</div>
+					</div>
+				</div>
+				<div class="work-piece-container" >
+					<img src="imgs/servus.png">
+				</div>
+				<div class="work-piece-expanded">
+					<div class="work-expanded-container">
+						<img src="imgs/servus.png">
+						<div class="work-expanded-info">
+							<div class="close-icon">
+								<span id="top-icon"></span>
+								<span id="bottom-icon"></span>
+							</div>
+							<h1>Servus</h1>
+							<h3>About</h3>
+							<p>Servus is a fully functional POS application that allows for servers to organize and track their orders, as well as manage their tables.</p>
+							<h3>Features</h3>
+							<ul>
+								<li> Table Tracking - Allows for servers to create and track table information, such as table number and number of guests. The Servus Interface also allows for quick and easy access to order history for each table.</li>
+								<li>Order Selection - Allows for servers add orders to specific tables by first selecting the table, and then selecting the food item. Selected food item will be highlighted in green for quick recognition.</li>
+								<li>Customizable Menu - The customizable menu allows managers to quickly update the menu that servers will have access to. Food items that are no longer on the menu may be deleted.</li>
+								<li>Adding Menu Items - Managers can add new food items to the menu, through entering the necessary information, including price, name, type of cuisine, and any allergens the food may contain.</li>
+							</ul>
+							<h3>My Role</h3>
+							<p
+							</div>>Servus was a personal project of mine to test out a Sinatra (Ruby) application. I was responsible for both Fron-End and Back-End development. Backbone.js and Underscore.js were used in the client-side development. </p>
+						</div>
+					</div>
+				</div>
+				<div class="work-piece-container" >
+					<img src="imgs/blocktrotter.png">
+				</div>
+				<div class="work-piece-expanded">
+					<div class="work-expanded-container">
+						<img src="imgs/blocktrotter.png">
+						<div class="work-expanded-info">
+							<div class="close-icon">
+								<span id="top-icon"></span>
+								<span id="bottom-icon"></span>
+							</div>
+							<h1>Blocktrotter</h1>
+							<h3>About</h3>
+							<p>Blocktrotter is a application that helps visitors and residents better explore the dozens of neighborhoods in the city of Chicago. With Yelp and Foursquare recommendations, Blocktrotter gives users the best options for their trip.</p>
+							<h3>Features</h3>
+							<ul>
+								<li>Search Feature - allows users to search for specific places within each neighborhood.</li>
+								<li>Foursquare / Yelp Results - search function returns both the Yelp and Foursquare top results for that search query. This allows gives users multiple options as well as the ability to compare places across both Yelp and Foursquares ratings.</li>
+							</ul>
+							<h3>My Role</h3>
+							<p>My role in the development of Blocktrotter was Front-End developer. I was tasked with managing the client-side rendering of our data, client-side validaiton, as well as styling.</p>
+						</div>
+					</div>
+				</div>
+				<div class="work-piece-container" >
+					<img src="imgs/newwabansians.png">
+				</div>
+				<div class="work-piece-expanded">
+					<div class="work-expanded-container">
+						<img src="imgs/newwabansians.png">
+						<div class="work-expanded-info">
+							<div class="close-icon">
+								<span id="top-icon"></span>
+								<span id="bottom-icon"></span>
+							</div>
+							<h1>The New Wabansians</h1>
+							<h3>About</h3>
+							<p>The New Wabansians website was a 'fun project'. Music is one of my passions, so I decided to build a website for a made-up band, 'The New Wabansians'. Although this example is specific to the New Wabansians, it serves as a a template to be used for any band's website. </p>
+						</div>
+					</div>
+				</div>
+				<div class="work-piece-container" >
+					<img src="imgs/greenthumb.png">
+				</div>
+				<div class="work-piece-expanded">
+					<div class="work-expanded-container">
+						<img src="imgs/greenthumb.png">
+						<div class="work-expanded-info">
+							<div class="close-icon">
+								<span id="top-icon"></span>
+								<span id="bottom-icon"></span>
+							</div>
+							<h1>Green Thumb Landing Page</h1>
+							<h
+							</div>3>About</h3>
+							<p>Green Thumb is a concept I had for a mobile application that allows user to find local organic food options, markets, and events. This landing page serves as an informational source for those who were interested in learning about the application or signing up for it. My goal was to highlight the features of the mobile application, as well as to provide visitors a link to download the application.</p>
+						</div>
+					</div>
+				</div>
+				<div class="work-piece-container" >
+					<img src="imgs/offtherecord.png">
+				</div>
+				<div class="work-piece-expanded">
+					<div class="work-expanded-container">
+						<img src="imgs/offtherecord.png">
+						<div class="work-expanded-info">
+							<div class="close-icon">
+								<span id="top-icon"></span>
+								<span id="bottom-icon"></span>
+							</div>
+							<h
+							</div>1>Off the Record</h1>
+							<h3>About</h3>
+							<p>Off The Record is a music magazine that tells the story of amazing artists and music festivals by curating the most interesting videos, images, and articles. Off The Record is made for music lovers, by music lovers.</p>
+							<h3>My Role</h3>
+							<p>My responsibilities include content gathering, curation of content, design, and development. After searching for and gathering content through social media outlets, including Twitter and Facebook, my goal was to arrange the content in a way that would tell the story of each specific music festival. Once a layout has been determined, I would implement it through HTML, CSS, and Javascript. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> <!-- WORK SECTION END -->
+
+	<section id="about"> <!-- ABOUT SECTION BEGIN -->
+		<div id="about-content-container">
+			<h2>About</h2>
+			<img src="imgs/about-me.png" id="profile-pic">
+			<h3>Hi, my name is Jake Lassiter.</h3>
+			<div id="about-button-container">
+				<a href="#professional"><h5>ABOUT ME</h5></a>
+				<a href="#skills"><h5>SKILLS</h5></a>
+				<a href="#contact"><h5>CONTACT</h5></a>
+			</div>
+			<div class="about-me-section" id="professional">
+				<h4>About Me</h4>
+				<p>I'm Full-Stack Web Developer, with an eye for design, and a passion for learning. I have a slight obsession with all things creative, and a passion for music, science, and technology. In my free time I enjoy playing & writing music, exercising, watching documentaries, and exploring the world of Web Development.  </p>
+				<a href="imgs/resume.pdf" download="Jake_Lassiter_Resume.pdf">My Resume</a>
+			</div>
+			<div class="about-me-section" id="skills">
+				<h4>Skills</h4>
+				<div id="skills-frontend" class="skills-box">
+					<h5>Front-End</h5>
+					<h6>CSS3</h6>
+					<h6>JQuery</h6>
+					<h6>Backbone.js</h6>
+					<h6>Underscore.js</h6>
+					<h6>React.js</h6>
+				</div>
+				<div id="skills-backend" class="skills-box">
+					<h5>Back-End</h5>
+					<h6>Ruby on Rails</h6>
+					<h6>Sinatra</h6>
+					<h6>PostgreSQL</h6>
+					<h6>Node</h6>
+				</div>
+				<div id="skills-design" class="skills-box">
+					<h5>Design</h5>
+					<h6>Photoshop</h6>
+					<h6>Illustrator</h6>
+					<h6>InDesign</h6>
+				</div>
+			</div>
+			<div class="about-me-section" id="contact">
+				<h4>Drop me a line...</h4>
+				<div id="about-icons-container">
+					<div class="icon-container">
+						<svg id="circle" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+							<circle class="social-icon" r="32" cx="50" cy="55" stroke="#9fcae0" stroke-width="2" fill="none"/>
+						</svg>
+						<a href="https://twitter.com/JLass6688" target="_blank" class="icon-img" ><img src="imgs/twitter.png"></a>
+					</div>
+					<div class="icon-container">
+						<svg id="circle" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+							<circle class="social-icon" r="32" cx="50" cy="55" stroke="#9fcae0" stroke-width="2" fill="none"/>
+						</svg>
+						<a href="https://github.com/JLass6688" target="_blank" class="icon-img" ><img src="imgs/github.png"></a>
+					</div>
+					<div class="icon-container">
+						<svg id="circle" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+							<circle class="social-icon" r="32" cx="50" cy="55" stroke="#9fcae0" stroke-width="2" fill="none"/>
+						</svg>
+						<a href="https://www.linkedin.com/in/jakelassiter" target="_blank" class="icon-img"><img src="imgs/linkedin.png"></a>
+					</div>
+					<div class="icon-container">
+						<svg id="circle" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+							<circle class="social-icon" r="32" cx="50" cy="55" stroke="#9fcae0" stroke-width="2" fill="none"/>
+						</svg>
+						<a href="https://dribbble.com/JLass6688" target="_blank" class="icon-img"><img src="imgs/dribbble.png"></a>
+					</div>
+				</div> <!-- END SOCIAL ICONS CONTAINER -->
+			</div>
+		</div>
+
+	</div>	</section> <!-- ABOUT SECTION END -->
 
 </body>
 </html>

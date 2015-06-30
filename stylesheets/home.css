@@ -5,213 +5,47 @@
 
 @-ms-viewport {
   width: device-width; }
-nav {
-  width: 250px;
-  height: 650px;
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-color: #141f27;
-  z-index: -1;
-  display: flex;
-  flex-direction: column; }
-  nav h4 {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300;
-    font-size: 14pt;
-    text-align: center;
-    line-height: 75px;
-    width: 50%;
-    border-bottom: solid 1px #9fcae0;
-    margin: 0 auto;
-    height: 75px; }
-  nav div {
-    padding-top: 137.5px; }
-  nav a {
-    color: #9fcae0;
-    display: block;
-    width: 100%;
-    height: 75px;
-    text-decoration: none; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
-div#nav-icon-container {
-  position: fixed;
-  top: 25px;
-  right: 25px;
-  width: 40px;
-  height: 30px;
-  cursor: pointer;
-  z-index: 4; }
-  div#nav-icon-container span {
-    width: 75%;
-    background-color: white;
-    height: 1px;
-    margin: 0 auto 7px;
-    display: block;
-    border-radius: 5px; }
-  div#nav-icon-container span:nth-child(3) {
-    margin-bottom: 0; }
-  div#nav-icon-container .menuTopRotate {
-    animation: menuTopRotate 1s forwards;
-    -webkit-animation: menuTopRotate 1s forwards;
-    -moz-animation: menuTopRotate 1s forwards; }
-  div#nav-icon-container .menuBottomRotate {
-    animation: menuBottomRotate 1s forwards;
-    -webkit-animation: menuBottomRotate 1s forwards;
-    -moz-animation: menuBottomRotate 1s forwards; }
-  div#nav-icon-container .menuMiddleOut {
-    animation: fadeOut 1s forwards;
-    -webkit-animation: fadeOut 1s forwards;
-    -moz-animation: fadeOut 1s forwards; }
-  div#nav-icon-container .menuTopStart {
-    animation: menuTopStart 1s forwards;
-    -webkit-animation: menuTopStart 1s forwards;
-    -moz-animation: menuTopStart 1s forwards; }
-  div#nav-icon-container .menuBottomStart {
-    animation: menuBottomStart 1s forwards;
-    -webkit-animation: menuBottomStart 1s forwards;
-    -moz-animation: menuBottomStart 1s forwards; }
-  div#nav-icon-container .menuMiddleIn {
-    animation: fadeIn 1s forwards;
-    -webkit-animation: fadeIn 1s forwards;
-    -moz-animation: fadeIn 1s forwards; }
-
-#home {
-  background: url("../imgs/main-bkg.jpg");
-  background-attachment: fixed;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 650px; }
-  #home div#head-container {
-    overflow: auto;
-    width: 500px;
-    margin: 0 auto 0;
-    padding-top: 75px;
-    overflow: visible;
-    max-width: 100%; }
-    #home div#head-container h1 {
-      font-family: "Voltaire", serif;
-      color: white;
-      font-size: 30pt;
-      text-align: center;
-      opacity: 0;
-      letter-spacing: 5px;
-      animation: fadeIn 2.5s forwards;
-      animation-delay: 3s;
-      -webkit-animation: fadeIn 2.5s forwards;
-      -webkit-animation-delay: 3s;
-      -moz-animation: fadeIn 2.5s forwards;
-      -moz-animation-delay: 3s;
-      margin-bottom: 5px; }
-    #home div#head-container h3 {
-      font-family: "Open Sans", sans-serif;
-      color: white;
-      text-align: center;
-      font-size: 14pt;
-      padding: 0 0 5px;
-      font-weight: 300;
-      animation: fadeIn 2.5s forwards;
-      animation-delay: 3s;
-      -webkit-animation: fadeIn 2.5s forwards;
-      -webkit-animation-delay: 3s;
-      -moz-animation: fadeIn 2.5s forwards;
-      -moz-animation-delay: 3s;
-      opacity: 0; }
-    #home div#head-container svg#helmet {
-      padding: 25px 0 25px;
-      margin: 0 auto;
-      width: 200px;
-      stroke-dasharray: 1140;
-      stroke-dashoffset: 1000;
-      animation: dash 2s forwards;
-      animation-delay: 1s;
-      -webkit-stroke-dasharray: 1140;
-      -webkit-stroke-dashoffset: 1000;
-      -webkit-animation: dash 2s forwards;
-      -webkit-animation-delay: 1s;
-      -moz-stroke-dasharray: 1140;
-      -moz-stroke-dashoffset: 1000;
-      -moz-animation: dash 2s forwards;
-      -moz-animation-delay: 1s;
-      display: block;
-      opacity: 0;
-      overflow: visible; }
-      #home div#head-container svg#helmet #antenna-big {
-        animation: antennaBig 2s infinite;
-        animation-delay: 4s;
-        -webkit-animation: antennaBig 2s infinite;
-        -webkit-animation-delay: 4s;
-        -moz-animation: antennaBig 2s infinite;
-        -moz-animation-delay: 4s; }
-      #home div#head-container svg#helmet #antenna-small {
-        animation: antennaSmall 1.5s forwards;
-        animation-delay: 4s;
-        -webkit-animation: antennaSmall 1.5s forwards;
-        -webkit-animation-delay: 4s;
-        -moz-animation: antennaSmall 1.5s forwards;
-        -moz-animation-delay: 4s; }
-      #home div#head-container svg#helmet #reflection {
-        fill: none;
-        animation: reflection 2s forwards;
-        animation-delay: 4s;
-        -webkit-fill: none;
-        -webkit-animation: reflection 2s forwards;
-        -webkit-animation-delay: 4s;
-        -moz-fill: none;
-        -moz-animation: reflection 2s forwards;
-        -moz-animation-delay: 4s; }
-      #home div#head-container svg#helmet #helmet-window {
-        fill: none;
-        animation: helmentWindow 2s forwards;
-        animation-delay: 4s;
-        -webkit-fill: none;
-        -webkit-animation: helmentWindow 2s forwards;
-        -webkit-animation-delay: 4s;
-        -moz-fill: none;
-        -moz-animation: helmentWindow 2s forwards;
-        -moz-animation-delay: 4s; }
-    #home div#head-container div#social-icons-container {
-      width: 400px;
-      margin: 0 auto; }
-      #home div#head-container div#social-icons-container div.icon-container {
-        width: 25%;
-        float: left;
-        height: 150px;
-        position: relative;
-        opacity: 0; }
-        #home div#head-container div#social-icons-container div.icon-container svg {
-          height: 100%;
-          width: 100%; }
-          #home div#head-container div#social-icons-container div.icon-container svg .social-icon-hover {
-            animation: socialIconHover .4s linear forwards;
-            -webkit-animation: socialIconHover .4s linear forwards;
-            -moz-animation: socialIconHover .4s linear forwards;
-            overflow: visible; }
-          #home div#head-container div#social-icons-container div.icon-container svg .social-icon-out {
-            animation: socialIconOut .4s linear forwards;
-            -webkit-animation: socialIconOut .4s linear forwards;
-            -moz-animation: socialIconOut .4s linear forwards;
-            overflow: visible; }
-        #home div#head-container div#social-icons-container div.icon-container img {
-          position: absolute;
-          top: 35px;
-          left: 30px;
-          width: 40px;
-          cursor: pointer;
-          z-index: 2; }
-      #home div#head-container div#social-icons-container div.fadeUp {
-        animation: fadeUp .5s forwards;
-        -webkit-animation: fadeUp .5s forwards;
-        -moz-animation: fadeUp .5s forwards; }
-
+@-ms-viewport {
+  width: device-width; }
 @keyframes dash {
   50% {
     opacity: 1; }
   100% {
     stroke-dashoffset: 0;
     opacity: 1; } }
+@keyframes textColorChange {
+  0% {
+    color: #f6d864; }
+  20% {
+    color: #141F27; }
+  100% {
+    color: #141F27; } }
+@keyframes moveInDown {
+  0% {
+    transform: translatey(-50px); }
+  100% {
+    transform: translatey(0); } }
+@keyframes dashIcon {
+  20% {
+    opacity: 0;
+    stroke-dashoffset: 1040;
+    stroke-dasharray: 1000;
+    stroke: #9fcae0; }
+  70% {
+    stroke-dashoffset: -10;
+    stroke-dasharray: -10;
+    opacity: 1;
+    stroke: #9fcae0; }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0;
+    opacity: 1;
+    stroke: #f6d864; } }
 @keyframes fadeDown {
   0% {
     opacity: 0;
@@ -330,6 +164,27 @@ div#nav-icon-container {
   100% {
     transform: translatey(0px);
     background-color: white; } }
+@keyframes workHoverIn {
+  0% {
+    opacity: .5;
+    border-radius: 1%; }
+  75% {
+    opacity: 1;
+    border-radius: 50%; }
+  100% {
+    opacity: 1;
+    border-radius: 50%; } }
+@keyframes workHoverOut {
+  0% {
+    opacity: 1;
+    border-radius: 50%; }
+  75% {
+    opacity: .5;
+    border-radius: 1%; }
+  100% {
+    opacity: .5;
+    border-radius: 1%;
+    border: none; } }
 @-webkit-keyframes dash {
   50% {
     opacity: 1; }
@@ -491,18 +346,26 @@ div#nav-icon-container {
     r: 40;
     opacity: 0; } }
 @-moz-keyframes antennaSmall {
+  0% {
+    fill: #f6d864;
+    fill-opacity: 0; }
   100% {
-    fill: #f6d864; } }
+    fill: #f6d864;
+    fill-opacity: 1; } }
 @-moz-keyframes reflection {
   0% {
-    fill: none; }
+    fill: #5f92b3;
+    fill-opacity: 0; }
   100% {
-    fill: #5f92b3; } }
+    fill: #5f92b3;
+    fill-opacity: 1; } }
 @-moz-keyframes helmentWindow {
   0% {
-    fill: none; }
+    fill: #1d2932;
+    fill-opacity: 0; }
   100% {
-    fill: #1d2932; } }
+    fill: #1d2932;
+    fill-opacity: 1; } }
 @-moz-keyframes nav {
   0% {
     right: -150px; }
@@ -513,7 +376,9 @@ div#nav-icon-container {
     r: 34;
     stroke: #9fcae0;
     fill: #5f92b3;
-    fill-opacity: 0; }
+    fill-opacity: 0;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0; }
   40% {
     fill-opacity: 1; }
   80% {
@@ -578,5 +443,576 @@ div#nav-icon-container {
   100% {
     -moz-transform: translatey(0px);
     background-color: white; } }
+nav {
+  width: 250px;
+  height: 650px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #141f27;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 137.5px; }
+  nav div.menu-text-container {
+    position: relative; }
+    nav div.menu-text-container span {
+      height: 50px;
+      width: 0px;
+      display: block;
+      background-color: #5f92b3;
+      position: absolute;
+      left: 50%;
+      top: 12.5px;
+      opacity: 0;
+      outline: none; }
+    nav div.menu-text-container h4 {
+      font-family: "Open Sans", sans-serif;
+      color: white;
+      font-weight: 300;
+      font-size: 14pt;
+      text-align: center;
+      line-height: 75px;
+      width: 50%;
+      border-bottom: solid 1px #9fcae0;
+      margin: 0 auto;
+      height: 75px;
+      cursor: pointer;
+      position: relative;
+      z-index: 2; }
+    nav div.menu-text-container h4:hover {
+      color: #f6d864;
+      border-color: #f6d864;
+      transition: .3s; }
+
+div#nav-icon-container {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 5; }
+  div#nav-icon-container span {
+    width: 75%;
+    background-color: white;
+    height: 1px;
+    margin: 0 auto 7px;
+    display: block;
+    border-radius: 5px; }
+  div#nav-icon-container span:nth-child(2) {
+    width: 50%; }
+  div#nav-icon-container span:nth-child(3) {
+    margin-bottom: 0; }
+  div#nav-icon-container span:hover {
+    background-color: #f6d864;
+    transition: .5s; }
+  div#nav-icon-container .menuTopRotate {
+    animation: menuTopRotate 1s forwards;
+    -webkit-animation: menuTopRotate 1s forwards;
+    -moz-animation: menuTopRotate 1s forwards; }
+  div#nav-icon-container .menuBottomRotate {
+    animation: menuBottomRotate 1s forwards;
+    -webkit-animation: menuBottomRotate 1s forwards;
+    -moz-animation: menuBottomRotate 1s forwards; }
+  div#nav-icon-container .menuMiddleOut {
+    animation: fadeOut 1s forwards;
+    -webkit-animation: fadeOut 1s forwards;
+    -moz-animation: fadeOut 1s forwards; }
+  div#nav-icon-container .menuTopStart {
+    animation: menuTopStart 1s forwards;
+    -webkit-animation: menuTopStart 1s forwards;
+    -moz-animation: menuTopStart 1s forwards; }
+  div#nav-icon-container .menuBottomStart {
+    animation: menuBottomStart 1s forwards;
+    -webkit-animation: menuBottomStart 1s forwards;
+    -moz-animation: menuBottomStart 1s forwards; }
+  div#nav-icon-container .menuMiddleIn {
+    animation: fadeIn 1s forwards;
+    -webkit-animation: fadeIn 1s forwards;
+    -moz-animation: fadeIn 1s forwards; }
+
+#home {
+  background: url("../imgs/main-bkg.jpg");
+  background-attachment: fixed;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 650px;
+  z-index: 2; }
+  #home div#head-container {
+    overflow: auto;
+    width: 500px;
+    margin: 0 auto 0;
+    padding-top: 75px;
+    overflow: visible;
+    max-width: 100%; }
+    #home div#head-container h1 {
+      font-family: "Voltaire", serif;
+      color: white;
+      font-size: 30pt;
+      text-align: center;
+      opacity: 0;
+      letter-spacing: 5px;
+      animation: fadeIn 2.5s forwards;
+      animation-delay: 3s;
+      -webkit-animation: fadeIn 2.5s forwards;
+      -webkit-animation-delay: 3s;
+      -moz-animation: fadeIn 2.5s forwards;
+      -moz-animation-delay: 3s;
+      margin-bottom: 5px; }
+    #home div#head-container h3 {
+      font-family: "Open Sans", sans-serif;
+      color: white;
+      text-align: center;
+      font-size: 14pt;
+      padding: 0 0 5px;
+      font-weight: 300;
+      animation: fadeIn 2.5s forwards;
+      animation-delay: 3s;
+      -webkit-animation: fadeIn 2.5s forwards;
+      -webkit-animation-delay: 3s;
+      -moz-animation: fadeIn 2.5s forwards;
+      -moz-animation-delay: 3s;
+      opacity: 0; }
+    #home div#head-container svg#helmet {
+      padding: 25px 0 25px;
+      margin: 0 auto;
+      width: 200px;
+      stroke-dasharray: 1140;
+      stroke-dashoffset: 1000;
+      animation: dash 2s forwards;
+      animation-delay: 1s;
+      -webkit-stroke-dasharray: 1140;
+      -webkit-stroke-dashoffset: 1000;
+      -webkit-animation: dash 2s forwards;
+      -webkit-animation-delay: 1s;
+      -moz-stroke-dasharray: 1140;
+      -moz-stroke-dashoffset: 1000;
+      -moz-animation: dash 2s forwards;
+      -moz-animation-delay: 1s;
+      display: block;
+      opacity: 0;
+      overflow: visible; }
+      #home div#head-container svg#helmet #antenna-big {
+        animation: antennaBig 2s infinite;
+        animation-delay: 4s;
+        -webkit-animation: antennaBig 2s infinite;
+        -webkit-animation-delay: 4s;
+        -moz-animation: antennaBig 2s infinite;
+        -moz-animation-delay: 4s; }
+      #home div#head-container svg#helmet #antenna-small {
+        animation: antennaSmall 1.5s forwards;
+        animation-delay: 4s;
+        -webkit-animation: antennaSmall 1.5s forwards;
+        -webkit-animation-delay: 4s;
+        -moz-animation: antennaSmall 1.5s forwards;
+        -moz-animation-delay: 4s; }
+      #home div#head-container svg#helmet #reflection {
+        animation: reflection 2s forwards;
+        animation-delay: 4s;
+        -webkit-fill: none;
+        -webkit-animation: reflection 2s forwards;
+        -webkit-animation-delay: 4s;
+        -moz-fill: none;
+        -moz-animation: reflection 2s forwards;
+        -moz-animation-delay: 4s; }
+      #home div#head-container svg#helmet #helmet-window {
+        fill: none;
+        animation: helmentWindow 2s forwards;
+        animation-delay: 4s;
+        -webkit-fill: none;
+        -webkit-animation: helmentWindow 2s forwards;
+        -webkit-animation-delay: 4s;
+        -moz-fill: none;
+        -moz-animation: helmentWindow 2s forwards;
+        -moz-animation-delay: 4s; }
+    #home div#head-container div#social-icons-container {
+      width: 400px;
+      margin: 0 auto; }
+      #home div#head-container div#social-icons-container div.icon-container {
+        width: 25%;
+        float: left;
+        height: 150px;
+        position: relative;
+        opacity: 0; }
+        #home div#head-container div#social-icons-container div.icon-container svg {
+          height: 100%;
+          width: 100%; }
+          #home div#head-container div#social-icons-container div.icon-container svg .social-icon-hover {
+            animation: socialIconHover .4s linear forwards;
+            -webkit-animation: socialIconHover .4s linear forwards;
+            -moz-animation: socialIconHover .4s linear forwards;
+            overflow: visible; }
+          #home div#head-container div#social-icons-container div.icon-container svg .social-icon-out {
+            animation: socialIconOut .4s linear forwards;
+            -webkit-animation: socialIconOut .4s linear forwards;
+            -moz-animation: socialIconOut .4s linear forwards;
+            overflow: visible; }
+        #home div#head-container div#social-icons-container div.icon-container img {
+          position: absolute;
+          top: 35px;
+          left: 30px;
+          width: 40px;
+          cursor: pointer;
+          z-index: 3; }
+      #home div#head-container div#social-icons-container div.fadeUp {
+        animation: fadeUp .5s forwards;
+        -webkit-animation: fadeUp .5s forwards;
+        -moz-animation: fadeUp .5s forwards; }
+
+section#work {
+  width: 0;
+  height: 650px;
+  background-color: #141F27;
+  position: fixed;
+  left: 0;
+  top: 650px;
+  z-index: 4; }
+  section#work div#work-content-container {
+    overflow: auto;
+    display: none; }
+    section#work div#work-content-container h2 {
+      font-family: "Open Sans", sans-serif;
+      font-size: 14pt;
+      font-weight: 300;
+      color: white;
+      float: left;
+      padding-left: 25px;
+      line-height: 65px;
+      animation: moveInDown 1s forwards; }
+    section#work div#work-content-container div#work-icon-container {
+      width: 220px;
+      height: 65px;
+      margin: 0 auto; }
+      section#work div#work-content-container div#work-icon-container img {
+        width: 30px;
+        height: 40px;
+        margin-right: 30px;
+        padding-top: 12.5px;
+        float: left;
+        animation: moveInDown 2s forwards; }
+      section#work div#work-content-container div#work-icon-container .damn-img {
+        margin-right: 0; }
+    section#work div#work-content-container div#work-pieces-container {
+      padding: 0 25px 75px;
+      width: 100%;
+      overflow-y: scroll;
+      height: 585px;
+      position: relative; }
+      section#work div#work-content-container div#work-pieces-container div.work-piece-expanded {
+        width: 0;
+        position: fixed;
+        top: 65;
+        left: 50%;
+        height: 585px;
+        z-index: 6;
+        margin: 0 auto;
+        background-color: #5f92b3;
+        overflow: hidden;
+        display: none; }
+        section#work div#work-content-container div#work-pieces-container div.work-piece-expanded div.work-expanded-container {
+          display: none; }
+          section#work div#work-content-container div#work-pieces-container div.work-piece-expanded div.work-expanded-container img {
+            width: 40%;
+            margin: 25px 5% 0 5%;
+            float: left;
+            display: block;
+            border-radius: 1%; }
+          section#work div#work-content-container div#work-pieces-container div.work-piece-expanded div.work-expanded-container div.work-expanded-info {
+            width: 40%;
+            margin: 5px 5% 0 5%;
+            padding: 2% 2% 100px;
+            border-radius: 1%;
+            float: right;
+            font-family: "Open Sans", sans-serif;
+            color: white; }
+            section#work div#work-content-container div#work-pieces-container div.work-piece-expanded div.work-expanded-container div.work-expanded-info div.close-icon {
+              font-size: 14pt;
+              position: absolute;
+              top: 25px;
+              right: 25px;
+              width: 40px;
+              height: 30px;
+              cursor: pointer; }
+              section#work div#work-content-container div#work-pieces-container div.work-piece-expanded div.work-expanded-container div.work-expanded-info div.close-icon span {
+                width: 75%;
+                background-color: white;
+                height: 1px;
+                margin: 0 auto -1px;
+                display: block;
+                border-radius: 5px; }
+              section#work div#work-content-container div#work-pieces-container div.work-piece-expanded div.work-expanded-container div.work-expanded-info div.close-icon span:nth-child(1) {
+                transform: rotate(45deg); }
+              section#work div#work-content-container div#work-pieces-container div.work-piece-expanded div.work-expanded-container div.work-expanded-info div.close-icon span:nth-child(2) {
+                transform: rotate(135deg); }
+            section#work div#work-content-container div#work-pieces-container div.work-piece-expanded div.work-expanded-container div.work-expanded-info h1 {
+              font-size: 24pt;
+              font-weight: 600;
+              text-align: center;
+              margin: 0 0 10px; }
+            section#work div#work-content-container div#work-pieces-container div.work-piece-expanded div.work-expanded-container div.work-expanded-info h3 {
+              font-size: 14pt;
+              font-weight: 300;
+              text-align: left;
+              width: 100px;
+              border-bottom: 1px solid #9fcae0;
+              padding: 20px 0 5px 0; }
+            section#work div#work-content-container div#work-pieces-container div.work-piece-expanded div.work-expanded-container div.work-expanded-info p {
+              padding-top: 5px; }
+            section#work div#work-content-container div#work-pieces-container div.work-piece-expanded div.work-expanded-container div.work-expanded-info ul {
+              padding: 5px 0 0 20px; }
+      section#work div#work-content-container div#work-pieces-container div.work-piece-container {
+        display: block;
+        float: left;
+        width: 32%;
+        border-radius: 1%;
+        margin: 2% 2% 0 0;
+        cursor: pointer;
+        position: relative; }
+        section#work div#work-content-container div#work-pieces-container div.work-piece-container img {
+          width: 100%;
+          position: relative;
+          opacity: .5; }
+        section#work div#work-content-container div#work-pieces-container div.work-piece-container img.workHoverOut {
+          animation: workHoverOut 1s forwards; }
+        section#work div#work-content-container div#work-pieces-container div.work-piece-container img.workHoverIn {
+          animation: workHoverIn 1s forwards; }
+      section#work div#work-content-container div#work-pieces-container div:nth-child(6n+5) {
+        margin-right: 0; }
+
+section#about {
+  width: 0;
+  height: 650px;
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  top: 650px;
+  z-index: 4;
+  overflow-y: scroll; }
+  section#about div#about-content-container {
+    overflow: auto;
+    display: none; }
+    section#about div#about-content-container h2 {
+      font-family: "Open Sans", sans-serif;
+      font-size: 14pt;
+      font-weight: 300;
+      color: white;
+      float: left;
+      padding-left: 25px;
+      line-height: 65px;
+      animation: moveInDown 1s forwards;
+      width: 100%;
+      background-color: #141F27;
+      font-weight: 300; }
+    section#about div#about-content-container img#profile-pic {
+      display: block;
+      border-radius: 50%;
+      width: 270px;
+      margin: 90px auto 25px; }
+    section#about div#about-content-container h3 {
+      font-family: "Open Sans", sans-serif;
+      color: #141F27;
+      font-size: 18pt;
+      text-align: center;
+      width: 75%;
+      margin: 0 auto 30px;
+      font-weight: 300; }
+    section#about div#about-content-container div#about-button-container {
+      width: 330px;
+      margin: 0 auto 50px;
+      overflow: auto; }
+      section#about div#about-content-container div#about-button-container a {
+        display: block;
+        float: left;
+        background-color: #141F27;
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin-right: 15px;
+        cursor: pointer;
+        outline: none;
+        border-radius: 50%;
+        text-decoration: none; }
+      section#about div#about-content-container div#about-button-container h5 {
+        font-family: "Open Sans", sans-serif;
+        color: white;
+        font-size: 12pt;
+        line-height: 100px;
+        text-align: center; }
+      section#about div#about-content-container div#about-button-container a:nth-child(3) {
+        margin-right: 0; }
+      section#about div#about-content-container div#about-button-container h5:hover {
+        color: #f6d864;
+        transition: .5s; }
+      section#about div#about-content-container div#about-button-container a:hover {
+        background-color: #5f92b3;
+        color: #f6d864;
+        transition: .5s; }
+    section#about div#about-content-container div.about-me-section {
+      width: 100%;
+      padding: 5%;
+      font-family: "Open Sans", sans-serif;
+      font-size: 14pt;
+      text-align: left;
+      color: white;
+      font-weight: 300; }
+      section#about div#about-content-container div.about-me-section h4 {
+        width: 200px;
+        border-bottom: solid 1px white;
+        padding-bottom: 10px; }
+      section#about div#about-content-container div.about-me-section p {
+        padding-top: 10px; }
+    section#about div#about-content-container div.about-me-section:nth-child(5) {
+      background-color: #141F27;
+      height: 375px; }
+    section#about div#about-content-container div.about-me-section:nth-child(6) {
+      background-color: #5f92b3;
+      height: 475px; }
+    section#about div#about-content-container div.about-me-section:nth-child(7) {
+      background-color: #141F27;
+      height: 375px; }
+    section#about div#about-content-container div#professional a {
+      display: block;
+      text-decoration: none;
+      font-size: 12pt;
+      text-align: center;
+      line-height: 45px;
+      font-family: #f6d864;
+      color: white;
+      height: 45px;
+      width: 150px;
+      border-radius: 5px;
+      margin: 50px auto 0;
+      border: 1px solid #9fcae0; }
+    section#about div#about-content-container div#professional a:hover {
+      background-color: #9fcae0;
+      color: #f6d864;
+      transition: .5s; }
+    section#about div#about-content-container div#skills div.skills-box {
+      width: 25%;
+      border-left: 2px solid white;
+      border-bottom: 2px solid white;
+      float: left;
+      margin: 75px 12.5% 0 0;
+      height: 225px;
+      font-family: "Open Sans", sans-serif;
+      text-align: center;
+      font-size: 14pt; }
+      section#about div#about-content-container div#skills div.skills-box h5 {
+        color: white; }
+      section#about div#about-content-container div#skills div.skills-box h6 {
+        color: #5f92b3;
+        background-color: white;
+        height: 25px;
+        line-height: 25px;
+        margin: 0 0 10px; }
+    section#about div#about-content-container div#skills div.skills-box:nth-child(4) {
+      margin-right: 0; }
+    section#about div#about-content-container div#skills div#skills-frontend h6:nth-child(2) {
+      width: 100%;
+      margin-top: 20px; }
+    section#about div#about-content-container div#skills div#skills-frontend h6:nth-child(3) {
+      width: 90%; }
+    section#about div#about-content-container div#skills div#skills-frontend h6:nth-child(4) {
+      width: 70%; }
+    section#about div#about-content-container div#skills div#skills-frontend h6:nth-child(5) {
+      width: 70%; }
+    section#about div#about-content-container div#skills div#skills-frontend h6:nth-child(6) {
+      width: 25%; }
+    section#about div#about-content-container div#skills div#skills-backend h6:nth-child(2) {
+      width: 85%;
+      margin-top: 20px; }
+    section#about div#about-content-container div#skills div#skills-backend h6:nth-child(3) {
+      width: 75%; }
+    section#about div#about-content-container div#skills div#skills-backend h6:nth-child(4) {
+      width: 75%; }
+    section#about div#about-content-container div#skills div#skills-backend h6:nth-child(5) {
+      width: 25%; }
+    section#about div#about-content-container div#skills div#skills-design h6:nth-child(2) {
+      width: 90%;
+      margin-top: 20px; }
+    section#about div#about-content-container div#skills div#skills-design h6:nth-child(3) {
+      width: 75%; }
+    section#about div#about-content-container div#skills div#skills-design h6:nth-child(4) {
+      width: 50%; }
+    section#about div#about-content-container div#contact h4 {
+      text-align: center;
+      margin: 0 auto; }
+    section#about div#about-content-container div#contact div#about-icons-container {
+      width: 400px;
+      margin: 0 auto; }
+      section#about div#about-content-container div#contact div#about-icons-container div.icon-container {
+        width: 25%;
+        float: left;
+        height: 150px;
+        position: relative; }
+        section#about div#about-content-container div#contact div#about-icons-container div.icon-container svg {
+          height: 100%;
+          width: 100%; }
+          section#about div#about-content-container div#contact div#about-icons-container div.icon-container svg .social-icon-hover {
+            animation: socialIconHover .4s linear forwards;
+            -webkit-animation: socialIconHover .4s linear forwards;
+            -moz-animation: socialIconHover .4s linear forwards;
+            overflow: visible; }
+          section#about div#about-content-container div#contact div#about-icons-container div.icon-container svg .social-icon-out {
+            animation: socialIconOut .4s linear forwards;
+            -webkit-animation: socialIconOut .4s linear forwards;
+            -moz-animation: socialIconOut .4s linear forwards;
+            overflow: visible; }
+        section#about div#about-content-container div#contact div#about-icons-container div.icon-container img {
+          position: absolute;
+          top: 35px;
+          left: 30px;
+          width: 40px;
+          cursor: pointer; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+@-ms-viewport {
+  width: device-width; }
+@media only screen and (max-width: 900px) {
+  section#work div#work-content-container div#work-pieces-container div.work-piece-expanded div.work-expanded-container img {
+    width: 50%;
+    margin: 65px auto 15px;
+    float: none;
+    display: block;
+    border-radius: 1%; }
+  section#work div#work-content-container div#work-pieces-container div.work-piece-expanded div.work-expanded-container div.work-expanded-info {
+    width: 90%;
+    margin: 0 auto;
+    float: none; } }
+@media only screen and (max-width: 800px) {
+  section#work div#work-content-container div#work-pieces-container div.work-piece-container {
+    width: 48%;
+    margin: 2% 1% 0; }
+
+  section#about {
+    width: 0;
+    height: 650px;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    top: 650px;
+    z-index: 4;
+    overflow-y: scroll; }
+    section#about div#about-content-container div.about-me-section:nth-child(6) {
+      height: 1015px; }
+    section#about div#about-content-container div#skills div.skills-box {
+      width: 75%;
+      float: none;
+      margin: 75px auto 0; }
+    section#about div#about-content-container div#skills div.skills-box:nth-child(4) {
+      margin: 75px auto 0; } }
+@media only screen and (max-width: 550px) {
+  section#work div#work-content-container div#work-icon-container {
+    display: none; }
+  section#work div#work-content-container div#work-pieces-container div.work-piece-container {
+    width: 98%;
+    margin: 2% 1% 0; } }
 
 /*# sourceMappingURL=home.css.map */

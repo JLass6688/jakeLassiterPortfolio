@@ -1,0 +1,145 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+@-ms-viewport{
+  width: device-width;
+}
+
+
+// FONTS
+$primary-font: 'Voltaire', serif;
+$secondary-font: 'Open Sans', sans-serif;
+
+// COLORS
+$primary-dark: #141F27;
+$primary-medium: #5f92b3;
+$primary-light: #9fcae0;
+$secondary: #f6d864;
+
+// Z-INDEX GUIDE
+// 	5 - Menu Icon
+//	4 - Work
+//	3 - Social Media Icon Images
+//	2 - Main Page Head Container
+//  2 - Nav H4
+// 	1 - Menu
+
+
+//MEDIA QUERIES
+
+//900 PX
+@media only screen and (max-width : 900px) {
+	//WORK SECTION
+	section#work{
+
+		div#work-content-container{
+			
+			h2{
+
+			}
+			div#work-icon-container{
+
+			}
+			div#work-pieces-container{
+				div.work-piece-expanded{
+					div.work-expanded-container{
+						img{
+							width: 50%;
+							margin: 65px auto 15px;
+							float: none;
+							display: block;
+							border-radius: 1%;
+						}
+						div.work-expanded-info{
+							width: 90%;
+							margin: 0 auto;
+							float: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+//800 PX
+@media only screen and (max-width : 800px) {
+	//WORK SECTION
+	section#work{
+
+		div#work-content-container{
+			
+			h2{
+
+			}
+			div#work-icon-container{
+
+			}
+			div#work-pieces-container{
+
+				div.work-piece-container{
+					width: 48%;
+					margin: 2% 1% 0;
+				}
+				
+			}
+		}
+	}
+	//ABOUT SECTION
+	section#about{
+		width: 0;
+		height: 650px;
+		background-color: #fff;
+		position: fixed;
+		left: 0;
+		top: 650px;
+		z-index: 4;
+		overflow-y: scroll;
+		div#about-content-container{
+			div.about-me-section:nth-child(6){
+				height: 1015px;
+			}
+			div#skills{
+				div.skills-box{
+					width: 75%;
+					float: none;
+					margin: 75px auto 0;
+				}
+				div.skills-box:nth-child(4){
+					margin: 75px auto 0;
+				}
+			}
+		}
+	}
+}
+
+//550PX
+@media only screen and (max-width : 550px) {
+	//WORK SECTION
+	section#work{
+
+		div#work-content-container{
+
+			h2{
+
+			}
+			div#work-icon-container{
+				display: none;
+			}
+			div#work-pieces-container{
+
+				div.work-piece-container{
+					width: 98%;
+					margin: 2% 1% 0;
+				}
+			}
+		}
+	}
+}
+
+
+
+
