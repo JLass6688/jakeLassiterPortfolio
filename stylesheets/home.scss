@@ -36,7 +36,7 @@ $secondary: #f6d864;
 //========================================================================NAV 
 nav{
 	width: 250px;
-	height: 650px;
+	height: 800px;
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -147,7 +147,7 @@ div#nav-icon-container{
 	position: fixed;
 	top: 0;
 	right: 0;
-	height: 650px;
+	height: 800px;
 	z-index: 2;
 	div#head-container{
 		overflow: auto;
@@ -289,11 +289,11 @@ div#nav-icon-container{
 //========================================================================WORK
 section#work{
 	width: 0;
-	height: 650px;
+	height: 800px;
 	background-color: $primary-dark;
 	position: fixed;
 	left: 0;
-	top: 650px;
+	top: 800px;
 	z-index: 4;
 	div#work-content-container{
 		overflow: auto;
@@ -434,11 +434,11 @@ section#work{
 //========================================================================ABOUT
 section#about{
 	width: 0;
-	height: 650px;
+	height: 800px;
 	background-color: #fff;
 	position: fixed;
 	left: 0;
-	top: 650px;
+	top: 800px;
 	z-index: 4;
 	overflow-y: scroll;
 	div#about-content-container{

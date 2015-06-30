@@ -445,7 +445,7 @@
     background-color: white; } }
 nav {
   width: 250px;
-  height: 650px;
+  height: 800px;
   position: fixed;
   top: 0;
   right: 0;
@@ -539,7 +539,7 @@ div#nav-icon-container {
   position: fixed;
   top: 0;
   right: 0;
-  height: 650px;
+  height: 800px;
   z-index: 2; }
   #home div#head-container {
     overflow: auto;
@@ -664,11 +664,11 @@ div#nav-icon-container {
 
 section#work {
   width: 0;
-  height: 650px;
+  height: 800px;
   background-color: #141F27;
   position: fixed;
   left: 0;
-  top: 650px;
+  top: 800px;
   z-index: 4; }
   section#work div#work-content-container {
     overflow: auto;
@@ -784,11 +784,11 @@ section#work {
 
 section#about {
   width: 0;
-  height: 650px;
+  height: 800px;
   background-color: #fff;
   position: fixed;
   left: 0;
-  top: 650px;
+  top: 800px;
   z-index: 4;
   overflow-y: scroll; }
   section#about div#about-content-container {
@@ -993,11 +993,11 @@ section#about {
 
   section#about {
     width: 0;
-    height: 650px;
+    height: 800px;
     background-color: #fff;
     position: fixed;
     left: 0;
-    top: 650px;
+    top: 800px;
     z-index: 4;
     overflow-y: scroll; }
     section#about div#about-content-container div.about-me-section:nth-child(6) {
